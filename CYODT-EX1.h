@@ -1,4 +1,4 @@
-#include <iostream>
+#include <streamio>
 
 namespace CYODT 
    {
@@ -12,7 +12,7 @@ namespace CYODT
             if(cnt != 0u)
                {
                int a;
-               std::cout << "Warning: " << cnt << " objects were not deallocated";
+               std::cout << "Warning: " << cnt << " objects were not deallocated" << std::endl;
                std::cin >> a;
                }
             }
