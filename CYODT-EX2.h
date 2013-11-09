@@ -25,3 +25,9 @@ namespace CYODT
       virtual ~MemCheck() {cnt--;}
       };
    }
+
+template <class T>
+unsigned int CYODT::MemCheck<T>::cnt = 0;
+
+template <class T>
+CYODT::MemCheck::Alert CYODT::MemCheck<T>::alert;
