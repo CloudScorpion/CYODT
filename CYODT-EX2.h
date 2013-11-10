@@ -21,7 +21,11 @@ namespace CYODT
          };
       static Alert alert;
       protected:
-      MemCheck() {cnt++;}
+      MemCheck() 
+      {
+      inner; // this is just to force VS to actually create the inner variable
+      cnt++;
+      }
       virtual ~MemCheck() {cnt--;}
       };
    }
@@ -30,4 +34,4 @@ template <class T>
 unsigned int CYODT::MemCheck<T>::cnt = 0;
 
 template <class T>
-CYODT::MemCheck::Alert CYODT::MemCheck<T>::alert;
+typename CYODT::MemCheck::Alert CYODT::MemCheck<T>::alert;
