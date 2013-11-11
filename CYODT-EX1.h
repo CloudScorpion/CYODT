@@ -7,6 +7,7 @@ namespace CYODT
       static unsigned int cnt;
       class Alert
          {
+         public:
          ~Alert()
             {
             if(cnt != 0u)
