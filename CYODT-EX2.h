@@ -23,7 +23,7 @@ namespace CYODT
       protected:
       MemCheck() 
       {
-      inner; // this is just to force VS to actually create the inner variable
+      alert; // this is just to force VS to actually create the inner variable
       cnt++;
       }
       virtual ~MemCheck() {cnt--;}
