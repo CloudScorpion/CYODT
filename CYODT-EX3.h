@@ -96,5 +96,5 @@ namespace CYODT
    typename MemBank<T>::MemBankClear MemBank<T>::clear;
 
    template <class T>
-   void _MemBankDeleteProxy(T* a) {MemBank<T>::deallocate(a);}
+   static void _MemBankDeleteProxy(T* a) {MemBank<T>::deallocate(a);}
    };
